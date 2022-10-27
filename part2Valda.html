@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Valda P. Web 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        html{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        body{
+            background-image: url(bg3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 100px;
+            margin-left: 460px;
+            padding-bottom: 100px;
+        }
+        .utama h2{
+            text-align: center;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: normal;
+        }
+        .utama form{
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .utama form input{
+            border-radius: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .utama form button{
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 17px;
+            cursor: pointer;
+            background: rgba(51, 160, 115, 0.74);
+            color: #212121;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="utama">
+            <h2>Brilliant Registration</h2>
+            <form action="action.html" class="was-validated" method="get">
+              <div class="form-group">
+                <label for="fname">Nama Depan :</label>
+                <input type="text" class="form-control" id="fname" name="fname" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Maaf, Nama Depan tidak boleh kosong !</div>
+              </div>
+
+              <div class="form-group">
+                <label for="lname">Nama Belakang :</label>
+                <input type="text" class="form-control" id="lname" name="lname" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Maaf, Nama Belakang tidak boleh kosong !</div>
+              </div>
+
+              <div class="form-group">
+                <label for="lname">Alamat :</label>
+                <input type="text" class="form-control" id="alamat" name="alamat" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Maaf, Alamat tidak boleh kosong !</div>
+              </div>
+
+              <div class="form-group">
+                <label for="tanggal">Tanggal Lahir :</label>
+                <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Maaf, Tanggal Lahir tidak boleh kosong !</div>
+              </div>
+
+              <div class="form-group">
+                <label for="jk">Jenis Kelamin :</label><br>
+                Pria<input type="radio" class="form-control" id="jk" name="jk" value="pria">
+                Perempuan<input type="radio" class="form-control" id="jk" name="jk" value="perempuan">
+              </div>
+
+              <div class="form-group">
+                <label for="uname">Username :</label>
+                <input type="text" class="form-control" id="uname" name="uname" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Maaf, Username tidak boleh kosong !</div>
+              </div>
+
+              <div class="form-group">
+                <label for="pw">Password :</label>
+                <input type="password" class="form-control" id="pw" name="pw" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Maaf, Password tidak boleh kosong !</div>
+              </div>
+
+              <div class="form-group">
+                <label for="gb">Browse Picture :</label>
+                <input type="file" class="form-control" id="gb" name="gb" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Maaf, Gambar tidak boleh kosong !</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
